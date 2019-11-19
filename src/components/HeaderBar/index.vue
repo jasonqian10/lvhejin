@@ -3,11 +3,11 @@
     <h1 class="logo"><a href="##"><img src="@/assets/logo.jpg" width="231px" height="84px" alt="xx公司"/></a></h1>
     <div class="nav">
       <ul class="nav-ul">
-        <li class="nav-li"><router-link :to="{ path: '/home/index' }" class="li_a">网站首页</router-link></li>
-        <li class="nav-li"><router-link :to="{ path: '/home/about' }" class="li_a">公司简介</router-link></li>
-        <li class="nav-li"><router-link :to="{ path: '/home/products' }" class="li_a">产品介绍</router-link></li>
+        <li class="nav-li"><router-link :to="{ path: '/home' }" class="li_a">网站首页</router-link></li>
+        <li class="nav-li"><router-link :to="{ path: '/about' }" class="li_a">公司简介</router-link></li>
+        <li class="nav-li"><router-link :to="{ path: '/products' }" class="li_a">产品介绍</router-link></li>
         <li class="nav-li"><a href="##" class="li_a">行业资讯</a></li>
-        <li class="nav-li"><router-link :to="{ path: '/home/contact' }" class="li_a">联系我们</router-link></li>
+        <li class="nav-li"><router-link :to="{ path: '/contact' }" class="li_a">联系我们</router-link></li>
         <li class="nav-li"><a href="##" class="li_a">网站地图</a></li>
         <li class="nav-li"><a href="##" class="li_a">收藏网站</a></li>
       </ul>
