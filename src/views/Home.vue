@@ -3,7 +3,7 @@
     <el-container class="wrapper">
       <el-header class="swapper">
         <swiper :options="swiperOption" class="swiper-img" >
-          <swiper-slide style="width: 100%"  v-for='item of swiperList' :key='item.id'>
+          <swiper-slide style="width: 100%"  v-for='item in swiperList' :key='item.id'>
             <img class='swiper-img' :src="item.imgUrl" style="width: auto;height: auto" />
           </swiper-slide>
           <div style="width: 100%"   slot="pagination"></div>
@@ -16,7 +16,7 @@
               产品分类
               </span>
               <span>
-                <router-link :to="{ path: '/home/products' }">More&gt;&gt;</router-link>
+                <router-link :to="{ path: '/products' }">More&gt;&gt;</router-link>
               </span>
           </div>
           <ul >
@@ -41,7 +41,7 @@
 
           <div class="titles" style="margin-top: 15px">
             <span>联系我们</span>
-            <span><route-link :to="{ path: '/home/contact' }">More&gt;&gt;</route-link></span>
+            <span><router-link :to="{ path: '/contact' }">More&gt;&gt;</router-link></span>
           </div>
           <ul style="border:1px solid #D5D9DC;">
             <p style="padding:10px;line-height: 20px;color:#333;font-size: 15px;font-weight: normal;">
@@ -61,7 +61,7 @@
         <el-main>
           <div class="titles">
             <span>公司简介</span>
-            <span><router-link :to="{ path: '/home/about' }">More&gt;&gt;</router-link></span>
+            <span><router-link :to="{ path: '/about' }">More&gt;&gt;</router-link></span>
           </div>
           <div class="company_about">
             <p style="font-size: 16px;line-height: 25px;font-family: 微软雅黑Monaco;margin-top: 10px">
@@ -71,10 +71,10 @@
 
           <div class="titles" style="margin-top: 15px">
             <span>产品简介</span>
-            <span><router-link :to="{ path: '/home/products' }">More&gt;&gt;</router-link></span>
+            <span><router-link :to="{ path: '/products' }">More&gt;&gt;</router-link></span>
           </div>
           <el-row style="margin-left: 40px">
-            <el-col :span="5" v-for="(o, index) in productsShowList" :key="o" :offset="(index)%4 !== 0 ? 1 : 0">
+            <el-col :span="5" v-for="(o, index) in productsShowList" :key="index" :offset="(index)%4 !== 0 ? 1 : 0">
               <div class="product_show">
                 <p class="demonstration">{{o.label}}</p>
                 <img style="width: 150px; height: 150px" :src="o.src"/>
