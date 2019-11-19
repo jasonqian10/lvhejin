@@ -5,8 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./static/reset.css">
+<!--    <link rel="stylesheet" href="./static/reset.css">-->
     <title>江苏麟瑞合金机械有限公司</title>
+    <link rel="shortcut icon" href="./static/favicon.ico" type="image/x-icon" />
+    <% for (var css in htmlWebpackPlugin.files.css) { %>
+    <link href="<%=htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
+    <% } %>
 </head>
 
 <body>
@@ -14,6 +18,9 @@
 <!--    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>-->
 <!--    <script src="./static/dropdown.js"></script>-->
 <!--    <script src="./static/new-detail.js"></script>-->
+    <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+    <script type="text/javascript" src="<%=htmlWebpackPlugin.files.chunks[chunk].entry %>" charset="UTF-8"></script>
+    <% } %>
 </body>
 
 </html>
