@@ -13,7 +13,7 @@ function resolve (dir) {
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    app: './src/main.js'
+    app: ['babel-polyfill', './src/main.js'] // babel-polyfill support es6 for IE
   },
   output: {
     path: config.build.assetsRoot,
@@ -26,7 +26,7 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src'),
+      '@': resolve('src')
     }
   },
   module: {
@@ -47,8 +47,7 @@ module.exports = {
         options: {
           limit: 10000,
           name: utils.assetsPath('img/[name].[hash:7].[ext]')
-        },
-        // use:['url-loader']
+        }
       },
       {
         test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
