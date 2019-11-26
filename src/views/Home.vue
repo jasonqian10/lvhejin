@@ -20,24 +20,24 @@
               </span>
           </div>
           <ul >
-            <li class="product_ul"><a href="##">旋风子</a></li>
-            <li class="product_ul"><a href="##">冷渣机</a></li>
-            <li class="product_ul"><a href="##">干渣机</a></li>
-            <li class="product_ul"><a href="##">耐热耐磨钢铸件</a></li>
-            <li class="product_ul"><a href="##">穿孔顶头</a></li>
+            <li class="product_ul"><router-link :to="{ path: '/products' }"><a href="##">旋风子</a></router-link></li>
+            <li class="product_ul"><router-link :to="{ path: '/products' }"><a href="##">冷渣机</a></router-link></li>
+            <li class="product_ul"><router-link :to="{ path: '/products' }"><a href="##">干渣机</a></router-link></li>
+            <li class="product_ul"><router-link :to="{ path: '/products' }"><a href="##">耐热耐磨钢铸件</a></router-link></li>
+            <li class="product_ul"><router-link :to="{ path: '/products' }"><a href="##">穿孔顶头</a></router-link></li>
           </ul>
 
-          <div class="titles" style="margin-top: 15px">
-            <span>新闻中心</span>
-            <span><a href="##">More&gt;&gt;</a></span>
-          </div>
-          <ul >
-            <li class="product_ul"><a href="##">xxxxxxxxxxxxxxxxxxxxx</a></li>
-            <li class="product_ul"><a href="##">xxxxxxxxxxxxxxxxxxxxx</a></li>
-            <li class="product_ul"><a href="##">xxxxxxxxxxxxxxxxxxxxx</a></li>
-            <li class="product_ul"><a href="##">xxxxxxxxxxxxxxxxxxxxx</a></li>
-            <li class="product_ul"><a href="##">xxxxxxxxxxxxxxxxxxxxx</a></li>
-          </ul>
+<!--          <div class="titles" style="margin-top: 15px">-->
+<!--            <span>新闻中心</span>-->
+<!--            <span><a href="##">More&gt;&gt;</a></span>-->
+<!--          </div>-->
+<!--          <ul >-->
+<!--            <li class="product_ul"><a href="##">xxxxxxxxxxxxxxxxxxxxx</a></li>-->
+<!--            <li class="product_ul"><a href="##">xxxxxxxxxxxxxxxxxxxxx</a></li>-->
+<!--            <li class="product_ul"><a href="##">xxxxxxxxxxxxxxxxxxxxx</a></li>-->
+<!--            <li class="product_ul"><a href="##">xxxxxxxxxxxxxxxxxxxxx</a></li>-->
+<!--            <li class="product_ul"><a href="##">xxxxxxxxxxxxxxxxxxxxx</a></li>-->
+<!--          </ul>-->
 
           <div class="titles" style="margin-top: 15px">
             <span>联系我们</span>
@@ -51,9 +51,9 @@
               <br>
               联系人: 钱经理
               <br>
-              手  机: 13878928901
+              手  机: 15950059725
               <br>
-              邮  箱: jasonqian10@163.com
+              邮  箱: linruihj@163.com
               <br>
             </p>
           </ul>

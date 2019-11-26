@@ -1,15 +1,15 @@
 <template>
   <div class="header top">
-    <h1 class="logo"><a href="##"><img src="@/assets/logo.jpg" width="231px" height="84px" alt="xx公司"/></a></h1>
+    <h1 class="logo"><a href="##"><img src="@/assets/公司名logo.jpeg" width="260px" height="84px" alt="xx公司"/></a></h1>
     <div class="nav">
       <ul class="nav-ul">
         <li class="nav-li"><router-link :to="{ path: '/home' }" class="li_a">网站首页</router-link></li>
         <li class="nav-li"><router-link :to="{ path: '/about' }" class="li_a">公司简介</router-link></li>
         <li class="nav-li"><router-link :to="{ path: '/products' }" class="li_a">产品介绍</router-link></li>
-        <li class="nav-li"><a href="##" class="li_a">行业资讯</a></li>
+<!--        <li class="nav-li"><a href="##" class="li_a">行业资讯</a></li>-->
         <li class="nav-li"><router-link :to="{ path: '/contact' }" class="li_a">联系我们</router-link></li>
-        <li class="nav-li"><a href="##" class="li_a">网站地图</a></li>
-        <li class="nav-li"><a href="##" class="li_a">收藏网站</a></li>
+<!--        <li class="nav-li"><a href="##" class="li_a">网站地图</a></li>-->
+<!--        <li class="nav-li"><a href="##" class="li_a">收藏网站</a></li>-->
       </ul>
     </div>
   </div>
@@ -26,7 +26,7 @@
 
   .logo {
     float: left;
-    width: 231px;
+    width: 260px;
     height: 80px;
     border-right: #999 1px solid;
   }
@@ -44,9 +44,9 @@
 
   .nav {
     float: left;
-    width: 965px;
+    width: 920px;
     height: 80px;
-    margin-left: 2px;
+    margin-left: 1px;
     background-image: linear-gradient(#ffffff, #C2DEF9);
     /*background:url(../../assets/nav_bg.png) repeat-x 0px -40px;*/
   }
@@ -58,10 +58,10 @@
 
   .nav-li {
     float: left;
-    width: auto;
+    width: 120px;
     height: 40px;
     line-height: 40px;
-    padding: 0px 24px 0px 21px;
+    padding: 0px 30px 0px 25px;
     background: url(../../assets/nav_bg.png) no-repeat right top;
   }
   .li_a {
