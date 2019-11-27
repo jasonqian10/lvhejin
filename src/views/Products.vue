@@ -31,7 +31,7 @@
                 },
                 {
                     label:'冷渣机1',
-                    Contact: require('@/assets/冷渣机1.png')
+                    src: require('@/assets/冷渣机1.png')
                 },
                 {
                     label:'冷渣机2',

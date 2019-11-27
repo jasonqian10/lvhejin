@@ -1,7 +1,6 @@
 <template>
   <div class="footer">
-    Copyright&copy;江苏麟瑞合金机械有限公司 电话：13878928901<br/>
-    技术支持：江苏网络 苏ICP备1xxxxxx7号
+    Copyright&copy;江苏麟瑞合金机械有限公司 电话：15950059725<br/>
   </div>
 </template>
 
